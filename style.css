@@ -1,4 +1,5 @@
 /* Reset de estilos para garantir consistência entre navegadores */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,16 +14,42 @@
     color: #333;
     background-color: #f7f7f7;
   }
+
+  header {
+    
+  background-color: #0f0f0f;
   
+  }
+
+  ttl {
+    font-family: Arial black, sans-serif;
+    font-size: 50px;
+    color: #e7ff33;
+    background-color: #0f0f0f;
+    text-decoration: none;
+  }
+
   /* Estilizando cabeçalhos */
   h1, h2, h3 {
     margin-bottom: 20px;
-    color: #333;
+    color: #ad5252;
   }
-  
+  /* estilo texto nav */
+  nvt {
+    font-family: Arial black, sans-serif;
+    font-size: 16px;
+    color: #fcfcfc;
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
   /* Estilizando links */
   a {
-    color: #007bff;
+    color: #fcfcfc;
     text-decoration: none;
   }
   
@@ -84,4 +111,71 @@
       padding: 20px;
     }
   }
+
+.elementos {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'Verdana';
+  background-color: #89a0ce;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.linhas {
+  cursor: pointer;
+}
+
+.span {
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  transition: 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.botao {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .elementos {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    margin: 0;
+    padding: 20px;
+    width: 35%;
+    height: 100%;
+    transform: translateX(-100%);
+  }
+
+  .botao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    padding-top: 20px;
+  }
+}
+  .linha-0 {
+  transform: rotate(45deg) translate(4.5px, 12px);
+}
+
+.linha-1 {
+  transform: scale(0);
+}
+
+.linha-2 {
+  transform: rotate(-45deg) translateY(-7.5px);
+}
+.barra-lateral {
+  transform: translateX(0px);
+}
   
+
